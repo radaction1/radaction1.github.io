@@ -6,46 +6,6 @@ _gaq.push(['_trackPageview']);
 		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();</script> <footer class="gp-theprint-footer"><div class="gp-theprint-row"><div class="can-map"> <a href="http://gutsmagazine.ca" title="GUTS"><img src="/wp-content/uploads/2016/09/GUTS-map-white_resize.png" alt="GUTS Canadian Map Logo"></a></div><div class="gp-theprint-footer-navigation-copyright"><nav class="gp-theprint-footer-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement"><div class="menu-footer-container"><ul><li id="menu-item-10852" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10852"><a href="http://gutsmagazine.ca/issue-archive/">Magazine</a></li><li id="menu-item-10610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10610"><a href="http://gutsmagazine.ca/about/">About</a></li><li id="menu-item-11073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11073"><a href="http://gutsmagazine.ca/donate/">Donate</a></li><li id="menu-item-10612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10612"><a href="http://gutsmagazine.ca/submit/">Submit</a></li><li id="menu-item-10614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10614"><a href="http://gutsmagazine.ca/terms-and-conditions/">Terms and Conditions</a></li><li id="menu-item-11972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11972"><a href="http://gutsmagazine.ca/privacy-policy/">Privacy Policy</a></li></ul></div></nav><div class="gp-theprint-copyright"><p>Copyright &copy; 2020 GUTS. All Rights Reserved.</a></p></div></div><div class="gp-theprint-footer-icons-newsletter"><div class="gp-theprint-footer-icons"><ul><li><a href="https://www.facebook.com/gutsmagazine"><i class="fa fa-facebook"></i></a></li><li><a href="https://www.twitter.com/gutsmagazine"><i class="fa fa-twitter"></i></a></li><li><a href="https://www.instagram.com/guts.magazine"><i class="fa fa-instagram"></i></a></li></ul></div></div></div></footer></div></div></div> <script type='text/javascript'>/* <![CDATA[ */ var wpcf7 = {"apiSettings":{"root":"http:\/\/gutsmagazine.ca\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"}; /* ]]> */</script>  <script>(function(w, d){
-	var b = d.getElementsByTagName("body")[0];
-	var s = d.createElement("script"); s.async = true;
-	s.src = !("IntersectionObserver" in w) ? "http://gutsmagazine.ca/wp-content/plugins/wp-rocket/inc/front/js/lazyload-8.12.min.js" : "http://gutsmagazine.ca/wp-content/plugins/wp-rocket/inc/front/js/lazyload-10.12.min.js";
-	w.lazyLoadOptions = {
-		elements_selector: "img",
-		data_src: "lazy-src",
-		data_srcset: "lazy-srcset",
-		data_sizes: "lazy-sizes",
-		skip_invisible: false,
-		class_loading: "lazyloading",
-		class_loaded: "lazyloaded",
-		threshold: 300,
-		callback_load: function(element) {
-			if ( element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible" ) {
-				if (element.classList.contains("lazyloaded") ) {
-					if (typeof window.jQuery != "undefined") {
-						if (jQuery.fn.fitVids) {
-							jQuery(element).parent().fitVids();
-						}
-					}
-				}
-			}
-		}
-	}; // Your options here. See "recipes" for more information about async.
-	b.appendChild(s);
-}(window, document));
-
-// Listen to the Initialized event
-window.addEventListener('LazyLoad::Initialized', function (e) {
-    // Get the instance and puts it in the lazyLoadInstance variable
-	var lazyLoadInstance = e.detail.instance;
-
-	var observer = new MutationObserver(function(mutations) {
-		mutations.forEach(function(mutation) {
-			lazyLoadInstance.update();
-		} );
-	} );
-	
-	var b      = document.getElementsByTagName("body")[0];
 	var config = { childList: true, subtree: true };
 	
 	observer.observe(b, config);
