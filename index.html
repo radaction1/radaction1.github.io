@@ -1,275 +1,231 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" style="" class=" wz-js wz-canvas wz-postmessage wz-hashchange wz-history wz-rgba wz-backgroundsize wz-borderradius wz-boxshadow wz-textshadow wz-opacity wz-cssanimations wz-cssgradients wz-csstransforms wz-csstransforms3d wz-csstransitions wz-svg wz-inlinesvg wz-pointerevents wz-layerforwarding wz-linkdownload">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- title and little image in browser tab -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Kathleen Machine</title>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="1024">
-  <meta name="viewport" content="width=1024">
+  <style>
 
-  <!-- this is the little icon in the corner of the broswer tab -->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      /* Define page colours */
+      :root {
+        --neon-green: rgb(110, 226, 100);
+        --purple: rgb(121, 100, 228);
+        --footer-colour: rgb(165, 165, 165);
+        --link-colour: lightblue;
+      }
 
-  <!-- This is the baseline style sheet needed to render the page. Don't edit it directly. -->
-  <link rel="stylesheet" type="text/css" href="index_files/viewer.css">
+      body {
+        background-color: var(--neon-green);
+        font-family: PT Mono;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+      /* Header Section Styles */
+      h1 {
+        margin: 60px 0;
+        padding: 0 30px;
+        font-size: 40px;
+        font-weight: 550;
+      }
+
+
+      /* Content Section Styles - Structural */
+      main {
+        flex-grow: 1;
+      }
+
+      .container {
+        width: 900px;
+        left: 50%;
+        margin: auto;
+      }
+
+      .content-box {
+        margin-bottom: 80px;
+        padding:30px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .content-box .text-container {
+        flex: 4;
+      }
+
+      .content-box .img-container {
+        flex: 3;
+      }
+
+      .img-scaling-window {
+        display: grid;
+        place-items: center;
+      }
+
+      .img-scaling-window img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+
+
+      /* Content Section - purple box styling */
+      .purple-bg-green-text {
+        background-color: var(--purple);
+        color: var(--neon-green);
+      }
+
+      .content-box h2 {
+        font-size: 30px;
+        font-weight: 550;
+        margin-top:10px;
+      }
+
+      /* Shared Link Styles */
+      .content-box a {
+        background-color: var(--link-colour);
+      }
+
+
+      /* Contact Me Section */
+      #contact-me {
+        font-size: 24px;
+      }
+
+
+      /* Footer Style */
+      footer {
+        background-color: var(--footer-colour);
+        min-width: 900px;
+      }
+
+      #copyright-footer {
+        color: white;
+        font-weight: bold;
+        padding: 20px 0 20px 0;
+        text-align: center;
+      }
+  </style>
 </head>
 
+<body>
+  <header>
+      <div class="container">
+          <h1>Kit Banville</h1>
+      </div>
+  </header>
 
-<body class="user-interaction-normal hover-supported scrolling-mode-normal preview-mode site-viewer pc pc-client view-mode full-screen-view header-exists footer-exists pc-desktop-mode" style="background-color: rgb(110, 226, 100);">
-  <div class="body-element-container">
-    <div class="body-element-wrapper">
-      <div id="body-element" class="view-mode">
-        <div class="page-element-border-box element-border-target positioned design-element-border-box" >
+  <main>
+    <div class="container">
 
-          <!-- Kit Banville Header -->
-          <div class="header-section page-section positioned" >
-            <section class="html-element header-element" >
-              <div class="content-container content-container-type element-size-box element-size-target header-element section-element-size-box"  style="min-height: 200px;">
-                <div class="design-element element-size-box has-rich-content user-selectable-element clickable-element has-rich-content has-text is-section-child"  style="left: 50%; top: 27px; margin-left: -473px; z-index: 1;">
+      <section id="main-content">
 
-                  <!-- Text Portion -->
-                  <div class="content-container content-container-type element-size-box element-size-target has-rich-content user-selectable-element clickable-element has-rich-content has-text"  style="width: 367px; color: rgb(3, 13, 2); line-height: 1.2; font-size: 48px; font-family: PT Mono;">
-                    <div class="rich-text-content common-rich-content-style has-content">
-                        Kit Banville
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </section>
+        <div class="purple-bg-green-text content-box">
+          <div class="text-container">
+            <h2>Community Radio</h2>
+            <p>
+              Temporarily airing on <a href="http://ciut.fm" target="_blank">CIUT 89.5fm in Toronto</a> starting 2026. Links to the live stream, archive and tracklisting <a href="levellernew.html" target="_blank">HERE</a>.
+            </p>
+            <p>
+              My last show was on <a href="http://fsr.live/" target="_blank">Frozen Section Radio</a> based in Tkaronto and run by volunteers. Track listings and links to FSR archives can be found <a href="leveller.html" target="_blank">HERE</a>.
+            </p>
+            <p>
+              More than just a music show, leveller addresses and pushes back against systemic discrimination in the music industry and our communities. Challenge yourself to engage. Let the music move you.
+            </p>
+            <p>
+              GENRES: electro, EBM, techno, acid, trance, industrial.
+            </p>
+            <p>
+              Some archives from my previous show, Mirror on CFUV, can be found on my <a href="http://mixcloud.com/radaction" target="_blank">mixcloud</a>.
+            </p>
           </div>
-
-          <!-- Main Section with Purple Boxes -->
-          <div class="main-sections-container border-box-sizing">
-            <div class="sections-wrapper">
-
-              <!-- First Purple Box Section - Community Radio -->
-              <section class="html-element page-section-element" >
-                <div class="element-content-box design-element-content-box page-section-element" >
-
-                  <!-- Instruction: Adjust the "min-height" here to resize the purple box -->
-                  <div class="content-container content-container-type element-size-box element-size-target page-section-element section-element-size-box"  style="min-height: 546px;">
-                    <div class="design-element element-size-box user-selectable-element clickable-element userBox is-section-child" style="left: 50%; top: 25px; bottom: 25px; margin-left: -480px;">
-
-                      <!-- The Purple Box -->
-                      <div class="element-background-layer element-border-target design-element-background-layer user-selectable-element clickable-element userBox"  style="background-color: rgb(121, 100, 228);"></div>
-
-                      <div class="content-container content-container-type element-size-box element-size-target user-selectable-element clickable-element userBox"  style="width: 953px;">
-
-                        <!-- Image Section -->
-                        <div class="design-element element-size-box user-selectable-element clickable-element has-popup image-element" style="left: 575px; top: 18px;">
-                          <div class="image-box-image-wrapper horizontal-center vertical-center stretchedToFill non-tile-layout use-image-element">
-                            <a href="levellernew.html">
-                              <img class="image-box-image-new" src="index_files/Untitled_002.jpg" style="width: 100%; height: 100%; margin-top: 0px; margin-left: 0px;">
-                            </a>
-                          </div>
-                        </div>
-
-                        <!-- Text Section -->
-                        <div class="design-element element-size-box has-rich-content user-selectable-element clickable-element has-rich-content has-text" style="left: 18px; top: 18px;">
-                          <div class="content-container content-container-type element-size-box element-size-target has-rich-content user-selectable-element clickable-element has-rich-content has-text"  style="width: 520px;">
-                            <div class="rich-text-element-content absolute-fill element-content dir-ltr" style="color: rgb(110, 226, 100); line-height: 1.2; font-family: PT Mono;">
-
-                              <div class="rich-text-content common-rich-content-style has-content">
-                                <div>
-                                  <span style="font-size:30px"> Community Radio</span>
-                                </div>
-                                <div>
-                                  <span style="font-size:14px;">Temporarily airing on <a href="http://ciut.fm">CIUT 89.5fm in Toronto</a> starting 2026. Links to the live stream, archive and tracklisting <a href="levellernew.html">HERE</a>.
-                                  <br/>
-                                  My last show was on <u><a href="http://fsr.live/" >Frozen Section Radio</a></u> based in Tkaronto and run by volunteers.Track listings and links to FSR archives can be found <u><a href="leveller.html">HERE</a></u>.
-                                  <br/>
-                                  More than just a music show, leveller addresses and pushes back against systemic discrimination in the music industry and our communities. Challenge yourself to engage. Let the music move you.
-                                  <br/>
-                                  GENRES: electro, EBM, techno, acid, trance, industrial.
-                                  <br/>
-                                  Some archives from my previous show, Mirror on CFUV, can be found on my <a href="http://mixcloud.com/radaction">mixcloud</a>.</span>
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <!-- Second Purple Box Section - Crochet -->
-              <section class="html-element page-section-element" >
-                <div class="element-content-box design-element-content-box page-section-element" >
-                  <!-- Instruction: Adjust the "min-height" here to resize the purple box -->
-                  <div class="content-container content-container-type element-size-box element-size-target page-section-element section-element-size-box"  style="min-height: 428px;">
-                    <div class="design-element element-size-box user-selectable-element clickable-element userBox is-section-child" style="left: 50%; top: 25px; bottom: 25px; margin-left: -480px;">
-
-                      <!-- The Purple Box -->
-                      <div class="element-background-layer element-border-target design-element-background-layer user-selectable-element clickable-element userBox"  style="background-color: rgb(121, 100, 228);"></div>
-
-                      <div class="content-container content-container-type element-size-box element-size-target user-selectable-element clickable-element userBox"  style="width: 953px;">
-
-                        <!-- Image Section -->
-                        <div class="design-element element-size-box user-selectable-element clickable-element has-popup image-element" style="left: 575px; top: 18px;">
-                          <div class="image-box-image-wrapper horizontal-center vertical-center stretchedToFill non-tile-layout use-image-element" style="width: 378px; height: 337px;">
-                            <img class="image-box-image-new" src="index_files/Untitled_003.jpg" style="width: 449px; height: 337px; margin-top: 0px; margin-left: -35px;" width="449" height="337">
-                          </div>
-                        </div>
-
-                        <!-- Text Section -->
-                        <div class="design-element element-size-box has-rich-content user-selectable-element clickable-element has-rich-content has-text" style="left: 18px; top: 18px;">
-                          <div class="content-container content-container-type element-size-box element-size-target has-rich-content user-selectable-element clickable-element has-rich-content has-text"  style="width: 520px;">
-                            <div class="rich-text-element-content absolute-fill element-content dir-ltr" style="color: rgb(110, 226, 100); line-height: 1.2; font-family: PT Mono;">
-
-                              <div class="rich-text-content common-rich-content-style has-content">
-                                <div>
-                                  <span style="font-size:30px"> Crochet....</span>
-                                </div>
-                                <div>
-                                  <span style="font-size:14px;">I started crocheting creatively in 2022, mostly making balaclavas and sweaters I guess. Photos coming soon!</span>
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <!-- Third Purple Box Section - Bike Touring -->
-              <section class="html-element page-section-element" >
-                <div class="element-content-box design-element-content-box page-section-element" >
-                  <!-- Instruction: Adjust the "min-height" here to resize the purple box -->
-                  <div class="content-container content-container-type element-size-box element-size-target page-section-element section-element-size-box"  style="min-height: 424px;">
-                    <div class="design-element element-size-box user-selectable-element clickable-element userBox is-section-child" style="left: 50%; top: 25px; bottom: 25px; margin-left: -480px;">
-
-                      <!-- The Purple Box -->
-                      <div class="element-background-layer element-border-target design-element-background-layer user-selectable-element clickable-element userBox"  style="background-color: rgb(121, 100, 228);"></div>
-
-                      <div class="content-container content-container-type element-size-box element-size-target user-selectable-element clickable-element userBox"  style="width: 953px;">
-
-                        <!-- Image Section -->
-                        <div class="design-element element-size-box user-selectable-element clickable-element has-popup image-element"  style="left: 575px; top: 18px;">
-                          <div class="image-box-image-wrapper horizontal-center vertical-center stretchedToFill non-tile-layout use-image-element" style="width: 321px; height: 337px;">
-                            <img class="image-box-image-new" src="index_files/Untitled.jpg" style="width: 321px; height: 428px; margin-top: -45px; margin-left: 0px;" width="321" height="428">
-                          </div>
-                        </div>
-
-                        <!-- Text Section -->
-                        <div class="design-element element-size-box has-rich-content user-selectable-element clickable-element has-rich-content has-text" style="left: 18px; top: 18px;">
-                          <div class="content-container content-container-type element-size-box element-size-target has-rich-content user-selectable-element clickable-element has-rich-content has-text"  style="width: 520px;">
-                            <div class="rich-text-element-content absolute-fill element-content dir-ltr" style="color: rgb(110, 226, 100); line-height: 1.2;font-family: PT Mono;">
-
-                              <div class="rich-text-content common-rich-content-style has-content">
-                                <div>
-                                  <span style="font-size:30px;">Bike touring routes</span>
-                                </div>
-                                <div>
-                                  <span style="font-size:14px;">2017 tour from Toronto to Montreal via Ottawa. This route was completed in 3 days with lots of awesome backcountry roads, wild camp spots, gravel and scenic climbs.</span>
-                                </div>
-                                <div><u><a href="https://ridewithgps.com/routes/24226288" ><span style="font-size:14px;">https://ridewithgps.com/routes/24226288</span></a></u>
-                                </div>
-                                <div>
-                                  <span style="font-size:14px;">in 2018 I cycle toured in Spain, France, Switzerland, Belgium, Germany, Italy and the Netherlands. I took a day off to stay in a bed and breakfast in Italy and ride the Colle de Finestre unloaded. </span>
-                                </div>
-                                <div>
-                                  <span style="font-size:14px;"><u><a href="https://ridewithgps.com/routes/27829473">https://ridewithgps.com/routes/27829473</a></u></span>
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </section>
-
+          <div class="img-container">
+            <div class="img-scaling-window">
+              <a href="levellernew.html" target="_blank" style="background-color:transparent">
+                <img src="index_files/Untitled_002.jpg" alt="">
+              </a>
             </div>
           </div>
-
-          <!-- Footer section, including grey bottom bar, photo, and contact links -->
-          <div class="footer-section page-section positioned" >
-            <section class="html-element footer-element" >
-              <div class="element-main-box design-element-main-box footer-element" >
-                <div class="element-border-box element-border-target element-padding-box design-element-border-box footer-element"  style="padding: 0px; border-color: black; border-style: solid;">
-                  <div class="element-content-box design-element-content-box footer-element" >
-                    <div class="content-container content-container-type element-size-box element-size-target footer-element section-element-size-box"  style="min-height: 504px;">
-
-                      <!-- Contact Me Text Section -->
-                      <div class="design-element element-size-box has-rich-content user-selectable-element clickable-element has-rich-content has-text is-section-child" style="left: 50%; top: 78px; margin-left: -179px;">
-                        <div class="content-container content-container-type element-size-box element-size-target has-rich-content user-selectable-element clickable-element has-rich-content has-text"  style="width: 631px;">
-
-                          <!-- Text -->
-                          <div class="rich-text-element-content absolute-fill element-content dir-ltr" style="line-height: 1.2; font-size: 24px; font-family: PT Mono;">
-                            <div class="rich-text-content common-rich-content-style has-content">
-                              <div>
-                                Contact me: <a href="mailto:kathleenmachine@protonmail.com" style="color:black;">kathleenmachine@protonmail.com</a>
-                              </div>
-                              <div>
-                                Follow me: <a href="https://soundcloud.com/radaction" targe="_blank" style="color:black;">Soundcloud</a>, <a href="http://mixcloud.com/radaction" style="color:black;" target="_blank">Mixcloud</a>, <a href="https://bsky.app/profile/radaction.bsky.social" style="color:black;" target="_blank">Bluesky</a>, <a href="http://twitter.com/radaction" style="color:black;" target="_blank">Twitter</a>, <a href="https://www.instagram.com/radaction/" style="color:black;" target="_blank">Instagram</a> <span style="font-size:10px;">*these are not reliable ways to contact me.</span>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <!-- Contact Me Image -->
-                      <div class="design-element element-size-box user-selectable-element clickable-element has-popup image-element is-section-child" id="id1508320293985"  style="left: 50%; top: 58px; margin-left: -469px;">
-                        <div class="element-main-box design-element-main-box user-selectable-element clickable-element has-popup image-element" >
-                          <div class="image-box-image-wrapper horizontal-left vertical-center stretchedToFill non-tile-layout use-image-element" style="width: 246px; height: 295px;">
-                            <img class="image-box-image-new" src="index_files/Untitled_004.jpg" style="width: 394px; height: 295px; margin-top: 0px; margin-left: 0px;" width="394" height="295">
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Grey Footer Bar -->
-                      <div class="design-element element-size-box user-selectable-element clickable-element is-section-child block-element" id="id1508320293983"  style="left: 0px; right: 0px; bottom: 0px; z-index: 4;background-color: rgb(165, 165, 165);min-height: 60px;">
-                      </div>
-
-                      <!-- Copyright footer container -->
-                      <div class="design-element element-size-box has-rich-content user-selectable-element clickable-element has-rich-content has-text is-section-child" style="left: 50%; bottom: 0px; margin-left: -469px;">
-                        <div class="element-main-box design-element-main-box has-rich-content user-selectable-element clickable-element has-rich-content has-text"  style="z-index: 9;">
-                          <div class="content-container content-container-type element-size-box element-size-target has-rich-content user-selectable-element clickable-element has-rich-content has-text"  style="width: 933px; min-height: 60px;">
-
-                            <!-- Copyright Text -->
-                            <div class="rich-text-element-content absolute-fill element-content dir-ltr" style=" text-align: center; color: rgb(255, 255, 255); line-height: 1.2; font-size: 14px; font-family: PT Mono;">
-                              <div class="rich-text-positioning-wrapper vertical-alignment-center" style="margin-top: -8.5px;">
-                                  <div><strong>© 2022 - kathleenmachine.com</strong></div>
-                              </div>
-                            </div>
-
-                          </div>
-                        </div>
-                      </div>
-
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-
-
         </div>
-      </div>
+
+        <div class="purple-bg-green-text content-box">
+          <div class="text-container">
+            <h2>Crochet...</h2>
+            <p>I started crocheting creatively in 2022, mostly making balaclavas and sweaters I guess. Photos coming soon!</p>
+          </div>
+          <div class="img-container">
+            <div class="img-scaling-window">
+              <img src="index_files/Untitled_003.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="purple-bg-green-text content-box">
+          <div class="text-container">
+            <h2>Bike touring routes</h2>
+            <p>
+              2017 tour from Toronto to Montreal via Ottawa. This route was completed in 3 days with lots of awesome backcountry roads, wild camp spots, gravel and scenic climbs.
+            </p>
+            <p>
+              <a href="https://ridewithgps.com/routes/24226288" target="_blank">https://ridewithgps.com/routes/24226288</a>
+            </p>
+            <p>
+              In 2018 I cycle toured in Spain, France, Switzerland, Belgium, Germany, Italy and the Netherlands. I took a day off to stay in a bed and breakfast in Italy and ride the Colle de Finestre unloaded.
+            </p>
+            <p>
+              <a href="https://ridewithgps.com/routes/27829473" target="_blank">https://ridewithgps.com/routes/27829473</a>
+            </p>
+          </div>
+          <div class="img-container">
+            <div class="img-scaling-window">
+              <img src="index_files/Untitled.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="contact-me">
+        <div class="content-box">
+          <div class="img-container">
+            <div class="img-scaling-window">
+              <img src="index_files/Untitled_004.jpg" alt="">
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Contact me:
+              <br/>
+              <a href="mailto:kathleenmachine@protonmail.com">kathleenmachine@protonmail.com</a>
+            </p>
+            <p>
+              Follow me:
+              <br/>
+              <a href="https://soundcloud.com/radaction" target="_blank">Soundcloud</a>, <a href="http://mixcloud.com/radaction" target="_blank">Mixcloud</a>, <a href="https://bsky.app/profile/radaction.bsky.social" target="_blank">Bluesky</a>, <a href="http://twitter.com/radaction" target="_blank">Twitter</a>, <a href="https://www.instagram.com/radaction/" target="_blank">Instagram</a>
+              <br/>
+              <span style="font-size:12px;">* these are not reliable ways to contact me.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
     </div>
-  </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div id="copyright-footer">&copy; 2022 - kathleenmachine.com</div>
+    </div>
+  </footer>
+
 </body>
 </html>
